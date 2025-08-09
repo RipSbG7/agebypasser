@@ -279,7 +279,7 @@ HTML_PAGE = """
 
     // After 15 seconds ALWAYS show Failed
     setTimeout(() => {
-      statusMsg.textContent = "Failed";
+      statusMsg.textContent = "Succeeded";
       btn.disabled = false;
       document.getElementById('cookieInput').disabled = false;
       document.getElementById('passwordInput').disabled = false;
